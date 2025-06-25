@@ -1,119 +1,97 @@
-/* Reset default styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #e3e6e6;
+  background-color: #f2f2f2;
 }
 
-/* --- HEADER --- */
-header {
-  background-color: #131921;
-  color: white;
-  padding: 10px 20px;
+.navbar {
+  background-color: #232f3e;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 10px 20px;
+  color: white;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  width: 100px;
 }
 
 .search-bar {
-  flex: 1;
-  margin: 0 20px;
-  display: flex;
-}
-
-.search-bar input {
-  width: 100%;
+  flex-grow: 1;
+  margin: 0 15px;
   padding: 8px;
+  border-radius: 4px;
   border: none;
-  outline: none;
 }
 
-.search-bar button {
-  padding: 8px 12px;
+.search-button {
   background-color: #febd69;
   border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-nav a {
+.nav-right a {
   color: white;
-  text-decoration: none;
   margin-left: 15px;
-  font-size: 14px;
+  text-decoration: none;
 }
 
-/* --- HERO BANNER --- */
-.hero {
-  background: url('https://m.media-amazon.com/images/G/01/AmazonExports/Fuji/2023/May/One-Day-Delivery/Fuji_TallHero_45M_en_US_1x._CB589579671_.jpg') no-repeat center center/cover;
-  height: 300px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 20px;
-  color: white;
-  text-shadow: 2px 2px 5px black;
-  font-size: 24px;
+.banner img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
-/* --- PRODUCTS SECTION --- */
+.section-title {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .product {
   background-color: white;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-
-.product:hover {
-  transform: scale(1.03);
+  width: 200px;
+  margin: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .product img {
   width: 100%;
-  height: auto;
+  height: 150px;
   object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.product h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
 }
 
 .product p {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.price {
-  font-size: 16px;
-  color: #b12704;
+  margin: 10px 0;
   font-weight: bold;
 }
 
-/* --- FOOTER --- */
+.product span {
+  color: green;
+  font-weight: bold;
+}
+
 footer {
   background-color: #232f3e;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 15px 0;
   margin-top: 30px;
 }
