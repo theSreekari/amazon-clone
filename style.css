@@ -1,0 +1,119 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3e6e6;
+}
+
+/* --- HEADER --- */
+header {
+  background-color: #131921;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 20px;
+  display: flex;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #febd69;
+  border: none;
+  cursor: pointer;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+/* --- HERO BANNER --- */
+.hero {
+  background: url('https://m.media-amazon.com/images/G/01/AmazonExports/Fuji/2023/May/One-Day-Delivery/Fuji_TallHero_45M_en_US_1x._CB589579671_.jpg') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-size: 24px;
+}
+
+/* --- PRODUCTS SECTION --- */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: scale(1.03);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.product p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 16px;
+  color: #b12704;
+  font-weight: bold;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
